@@ -5,7 +5,6 @@ gem "github-pages", group: :jekyll_plugins
 show_downloads: true
 #########
 title: Ngoc Nguyen
-description: An Ecosystem Scientist studying interactions between climate and terrestrial ecosystem carbon fluxes
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-slate
