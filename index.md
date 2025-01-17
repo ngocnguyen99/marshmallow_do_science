@@ -11,7 +11,4 @@ I study the interactions between climate and terrestrial ecosystem carbon fluxes
 Key words: Ecosystem Carbon Flux Modeling, Eddy-covariance, Ecosystem Respiration, Vegetation Productivity, Machine Learning, Deep Learning, Large Language Models, Time Series Classification/Forecasting
 
 ## Fun facts
-I am Vietnamese
-I have experienced the Arctic polar nights
-I have worked as a government interpreter
-Rock climbing is my favorite sport
+I am the 2nd Vietnamese who collected marine samples under Arctic polar nights, I have been working as a government interpreter, and Rock climbing is my favorite sport
