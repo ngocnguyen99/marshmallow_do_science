@@ -7,14 +7,14 @@ show_downloads: true
 title: Ngoc Nguyen
 description: Modeling ecosystem carbon cycle and their interactions with climate 
 theme: jekyll-theme-slate
-nav:
-  - name: Home
-    link: /
-  - name: General
+
+# Navigation links
+navigation:
+  - name: About Me
     link: /about/
   - name: Research
-    link: /projects/
-  - name: Service and Outreach
-    link: /contact/
-  - name: Travel Blogs
+    link: /research/
+  - name: Outreach
+    link: /outreach/
+  - name: News
     link: /news/
