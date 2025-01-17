@@ -2,8 +2,6 @@
 layout: default
 ---
 
-## Welcome to another page
+## News
 
-_yay_
-
-[back](./)
+Jan 16, 2025: Experiencing the Arctic Polar Nights
