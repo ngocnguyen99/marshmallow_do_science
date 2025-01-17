@@ -1,3 +1,9 @@
+{% seo %} {% include head-custom.html %}
+{% if site.github.is_project_page %} View on GitHub {% endif %}
+{{ site.title | default: site.github.repository_name }}
+{{ site.description | default: site.github.project_tagline }}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
