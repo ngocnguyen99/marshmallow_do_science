@@ -6,6 +6,4 @@ show_downloads: true
 #########
 title: Ngoc Nguyen
 description: Modeling ecosystem carbon cycle and their interactions with climate 
-show_downloads: true
-google_analytics:
 theme: jekyll-theme-slate
