@@ -1,15 +1,23 @@
-{% seo %} {% include head-custom.html %}
-{% if site.github.is_project_page %} View on GitHub {% endif %}
-{{ site.title | default: site.github.repository_name }}
-{{ site.description | default: site.github.project_tagline }}
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.title }}</title>
+    
+    <!-- Dynamic Title and Description -->
+    <title>
+        {% if page.title %}
+            {{ page.title }} | {{ site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    
+    <!-- Other meta tags (optional) -->
+    <meta name="author" content="{{ site.author }}">
+    <meta name="keywords" content="Jekyll, Slate, GitHub Pages, Research, Outreach">
+    
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/reader.css' | relative_url }}">
 </head>
