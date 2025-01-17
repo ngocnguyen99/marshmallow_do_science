@@ -1,8 +1,16 @@
-@@ -1,24 +1,30 @@
 {% seo %} {% include head-custom.html %}
 {% if site.github.is_project_page %} View on GitHub {% endif %}
 {{ site.title | default: site.github.repository_name }}
 {{ site.description | default: site.github.project_tagline }}
+{% if site.show_downloads %}
+Download this project as a .zip file Download this project as a tar.gz file
+{% endif %}
+{{ content }}
+{% if site.github.is_project_page %}
+{{ site.title | default: site.github.repository_name }} maintained by {{ site.github.owner_name }}
+
+{% endif %}
+Published with GitHub Pages
 
 
 <!DOCTYPE html>
