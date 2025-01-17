@@ -1,45 +1,31 @@
+@@ -1,24 +1,30 @@
+{% seo %} {% include head-custom.html %}
+{% if site.github.is_project_page %} View on GitHub {% endif %}
+{{ site.title | default: site.github.repository_name }}
+{{ site.description | default: site.github.project_tagline }}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Dynamic Title and Description -->
-    <title>
-        {% if page.title %}
-            {{ page.title }} | {{ site.title }}
-        {% else %}
-            {{ site.title }}
-        {% endif %}
-    </title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    
-    <!-- Other meta tags (optional) -->
-    <meta name="author" content="{{ site.author }}">
-    <meta name="keywords" content="Jekyll, Slate, GitHub Pages, Research, Outreach">
-    
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/reader.css' | relative_url }}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=10.0">
+<title>{{ page.title }} | {{ site.title }}</title>
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/reader.css' | relative_url }}">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navigation">
-                {% for item in site.navigation %}
-                    <li><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
-                {% endfor %}
-            </ul>
-        </nav>
-    </header>
+<header>
+<nav>
+<ul class="navigation">
+{% for item in site.navigation %}
+<li><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
+{% endfor %}
+</ul>
+</nav>
+</header>
 
-    <main role="main">
-        <div class="content">
-            {{ content }}
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+<main role="main">
+<div class="content">
+{{ content }}
+</div>
